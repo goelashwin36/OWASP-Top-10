@@ -1,5 +1,4 @@
 # OWASP-Top-10-2013
-# OWASP's TOP 10
 ## 2013
 
     1. Injection
@@ -17,7 +16,9 @@
 ## Injection
 ***Intro:*** 
 
-    In this particular type  of vuln., a malicious code is injected in the input which gets executed in the server side and gives a response. It might lead to severe security breach by disclosing some of the sensitive information unknowingly. Apart from this the server side data may also be modified/deleted or the complete host takeover might also take place.
+    In this particular type  of vuln., a malicious code is injected in the input which gets executed in the server side and gives a response. 
+    It might lead to severe security breach by disclosing some of the sensitive information unknowingly. 
+    Apart from this the server side data may also be modified/deleted or the complete host takeover might also take place.
 
 ***Reason:*** 
 
@@ -36,7 +37,8 @@
 
 ***Intro:*** 
     
-    The functions in the Application related to authentication and session management are not implemented correctly which might lead to a large security breach compromising passwords, session tokens. Sometimes these can be used to access profile of other users and then misuse.
+    The functions in the Application related to authentication and session management are not implemented correctly which might lead to a large security breach compromising passwords, session tokens. 
+    Sometimes these can be used to access profile of other users and then misuse.
 
 ***Reason:***
 
@@ -56,7 +58,8 @@
 
 ***Intro:*** 
 
-    This occurs when data is sent to the browser by the application without any proper validation. It allows the attacker to send payloads which gets executed in the victims browser to hijact user sessions, hijack browser, redirect to a malicious url etc.
+    This occurs when data is sent to the browser by the application without any proper validation. 
+    It allows the attacker to send payloads which gets executed in the victims browser to hijact user sessions, hijack browser, redirect to a malicious url etc.
 
     It's of 3 types:
     1. Stores XSS
@@ -132,12 +135,14 @@
 
 ***Intro:***
     
-    It is possible that an unauthorized user might be able to access some special features simply by accessing the URL etc. Suppose a feature is hidden for a user in the client side but if any request is sent then it is accepted.
+    It is possible that an unauthorized user might be able to access some special features simply by accessing the URL etc. 
+    Suppose a feature is hidden for a user in the client side but if any request is sent then it is accepted.
 
 ***Reason:***
 
     1. Server side authentication/authorisation is not done for restricted functions.
-    2. The UI somehow shows navigation to unauthorized functions. Suppose a button is rendered in the frontend but is hidden. If it is made visible then special functions can be executed.
+    2. The UI somehow shows navigation to unauthorized functions. 
+    Suppose a button is rendered in the frontend but is hidden. If it is made visible then special functions can be executed.
 
 ***Solution:***
 
@@ -148,7 +153,8 @@
 
 ***Intro:*** 
 
-    Imagine someone making you send a request to any website unknowingly which can perform harmful actions like making purchase, updating account info, posting on your social media account, logout and even login. This happens when the attacker creates a forged HTTP request and somehow makes you execute it. 
+    Imagine someone making you send a request to any website unknowingly which can perform harmful actions like making purchase, updating account info, posting on your social media account, logout and even login. 
+    This happens when the attacker creates a forged HTTP request and somehow makes you execute it. 
     CSRF takes advantage of the fact that the browser sends credentials like session cookies etc. to the server upon sending any request.
 
 ***Reason:***
@@ -186,7 +192,8 @@
 
 ***Intro:***
 
-    Sometimes sites have some links/buttons which redirects to a different page. It can happen in two ways- Indirect and direct redirects. In indirect a parameter is involved which calculated the destination and in direct, the url is opened directly
+    Sometimes sites have some links/buttons which redirects to a different page. It can happen in two ways- Indirect and direct redirects. 
+    In indirect a parameter is involved which calculated the destination and in direct, the url is opened directly
 ***Reason:***
 
     1. The site uses indirect redirects which includes parameters for calculating destination.
