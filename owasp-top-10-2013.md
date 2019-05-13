@@ -1,4 +1,4 @@
-# OWASP's TOP 10
+# OWASP TOP 10
 
 ## 2013
 
@@ -174,7 +174,6 @@
 ***Solution:***
 
     1. Implement CSRF token(any unique token) which is added in the response body on the first load of the website and every subsequent request should have that same token in the request body.
-
 
 ***
 
